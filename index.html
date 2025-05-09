@@ -659,69 +659,50 @@
 
         </div>
 
-        <form action="" class="contact-form">
+        
+       <form action="https://formspree.io/f/mnndzpnp" method="POST" class="contact-form">
 
-          <div class="form-wrapper">
+  <div class="form-wrapper">
+    <label for="name" class="form-label">Name</label>
+    <div class="input-wrapper">
+      <input type="text" name="name" id="name" required placeholder="e.g Vinit Patel" class="input-field">
+      <ion-icon name="person-circle"></ion-icon>
+    </div>
+  </div>
 
-            <label for="name" class="form-label">Name</label>
+  <div class="form-wrapper">
+    <label for="email" class="form-label">Email</label>
+    <div class="input-wrapper">
+      <input type="email" name="email" id="email" required placeholder="e.g vinitpatel6262@gmail.com" class="input-field">
+      <ion-icon name="mail"></ion-icon>
+    </div>
+  </div>
 
-            <div class="input-wrapper">
+  <div class="form-wrapper">
+    <label for="phone" class="form-label">Phone</label>
+    <div class="input-wrapper">
+      <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+      <ion-icon name="call"></ion-icon>
+    </div>
+  </div>
 
-              <input type="text" name="name" id="name" required placeholder="e.g Vinit Patel" class="input-field">
+  <div class="form-wrapper">
+    <label for="message" class="form-label">Message</label>
+    <div class="input-wrapper">
+      <textarea name="message" id="message" required placeholder="Write message..." class="input-field"></textarea>
+      <ion-icon name="chatbubbles"></ion-icon>
+    </div>
+  </div>
 
-              <ion-icon name="person-circle"></ion-icon>
+  <!-- Optional: redirect to thank-you page -->
+  <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
 
-            </div>
+  <!-- Optional: subject line for email -->
+  <input type="hidden" name="_subject" value="New Message from Contact Form">
 
-          </div>
+  <button type="submit" class="btn btn-primary">Send</button>
 
-          <div class="form-wrapper">
-
-            <label for="email" class="form-label">Email</label>
-
-            <div class="input-wrapper">
-
-              <input type="email" name="email" id="email" required placeholder="e.g vinitpatel6262@gmail.com"
-                class="input-field">
-
-              <ion-icon name="mail"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="phone" class="form-label">Phone</label>
-
-            <div class="input-wrapper">
-
-              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
-
-              <ion-icon name="call"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="message" class="form-label">Message</label>
-
-            <div class="input-wrapper">
-
-              <textarea name="message" id="message" required placeholder="Write message..."
-                class="input-field"></textarea>
-
-              <ion-icon name="chatbubbles"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <button type="submit" class="btn btn-primary">Send</button>
-
-        </form>
+</form>
 
       </section>
 
